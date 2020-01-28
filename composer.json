@@ -1,0 +1,41 @@
+{
+    "name": "glue-agency/ip-stack",
+    "description": "Lookup ip info using the IP Stack API",
+    "type": "craft-plugin",
+    "version": "0.1.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "ip stack"
+    ],
+    "support": {
+        "docs": "https://github.com/glue-agency/ip-stack/blob/master/README.md",
+        "issues": "https://github.com/glue-agency/ip-stack/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Glue",
+            "homepage": "https://glue.be"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1",
+        "guzzlehttp/guzzle": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "GlueAgency\\IPStack\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "IP Stack",
+        "handle": "ip-stack",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/glue-agency/ip-stack/master/CHANGELOG.md",
+        "class": "GlueAgency\\IPStack\\IpStack"
+    }
+}

@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * IP Stack plugin for Craft CMS 3.x
+ *
+ * IP Stack Settings.twig
+ *
+ * @author    Thomas De Marez
+ * @copyright Copyright (c) 2019 Thomas De Marez
+ * @link      thomasdm@glue.be
+ * @package   IPStack
+ * @since     0.1.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("GlueAgency\\IPStack\\assetbundles\\ipstack\\IPStackAsset") %}
+
+{{ forms.textField({
+    label: 'Access Key',
+    instructions: 'The Access key used by the plugin.',
+    id: 'api-key',
+    name: 'apiKey',
+    value: settings.apiKey
+}) }}
